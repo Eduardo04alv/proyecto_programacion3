@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "<div class='alert alert-success text-center mt-4'>
-                ✅ Cambios guardados correctamente. Redirigiendo...
+                Cambios guardados correctamente. Redirigiendo...
               </div>";
         echo "<script>
                 setTimeout(function() {
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
               </script>";
     } else {
         echo "<div class='alert alert-danger text-center mt-4'>
-                ❌ Error al guardar: " . $conn->error . "
+                 Error al guardar: " . $conn->error . "
               </div>";
     }
 }

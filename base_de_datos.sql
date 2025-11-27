@@ -15,7 +15,7 @@ CREATE TABLE productos(
     FOREIGN KEY (id_prov) REFERENCES proveedor(id_prov)
 );
 
--- Tabla facturas (sin usuario)
+-- Tabla facturas 
 CREATE TABLE facturas (
     id_factura INT AUTO_INCREMENT PRIMARY KEY,
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
